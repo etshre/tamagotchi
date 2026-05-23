@@ -1,0 +1,75 @@
+** Drc report for tamagotchi.kicad_pcb **
+** Created on 2026-05-23T18:01:00+0100 **
+
+** Found 17 DRC violations **
+[track_dangling]: Track has unconnected end
+    Local override; warning
+    @(75.6000 mm, 91.4478 mm): Track [GND] on B.Cu, length 0.0522 mm
+[shorting_items]: Items shorting two nets (nets GND and Net-(U1-GPIO3_A1_D1))
+    Local override; error
+    @(70.8000 mm, 95.1000 mm): PTH pad 1 [GND] of SW2
+    @(70.8000 mm, 94.5000 mm): Track [Net-(U1-GPIO3_A1_D1)] on B.Cu, length 4.8000 mm
+[shorting_items]: Items shorting two nets (nets GND and Net-(U1-GPIO3_A1_D1))
+    Local override; error
+    @(75.6000 mm, 95.1000 mm): PTH pad 1 [GND] of SW2
+    @(75.6000 mm, 94.5000 mm): Track [Net-(U1-GPIO3_A1_D1)] on B.Cu, length 1.1472 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1990 mm)
+    Rule: netclass 'Default'; error
+    @(62.6000 mm, 90.9000 mm): PTH pad 2 [Net-(U1-GPIO2_A0_D0)] of SW1
+    @(64.8150 mm, 91.1560 mm): Pad 12 [+3V3] of U1 on B.Cu
+[malformed_courtyard]: Footprint has malformed courtyard (self-intersecting)
+    Local override; error
+    @(72.2000 mm, 64.4000 mm): Footprint BUZZER1
+[lib_footprint_mismatch]: Footprint 'OLED-TH_L27.8-W27.2-P2.54_C9900033791' does not match copy in library 'easyeda2kicad'.
+    Local override; warning
+    @(72.3900 mm, 53.2000 mm): Footprint U2
+[lib_footprint_mismatch]: Footprint 'XIAO-ESP32-C3-DIP-SMD' does not match copy in library 'XIAO'.
+    Local override; warning
+    @(73.2700 mm, 93.6960 mm): Footprint U1
+[invalid_outline]: Board has malformed outline (segment has null or very small length: 1 nm)
+    Local override; error
+    @(30.0000 mm, 64.6258 mm): Segment on Edge.Cuts
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6350 mm)
+    Rule: board setup constraints silk text height; warning
+    @(83.5450 mm, 93.9710 mm): Reference field of U1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(70.6000 mm, 94.3500 mm): Circle of SW2 on F.Silkscreen
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(57.6000 mm, 87.1500 mm): Circle of SW1 on F.Silkscreen
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(83.8000 mm, 87.0500 mm): Circle of SW3 on F.Silkscreen
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(64.3800 mm, 102.2050 mm): Segment of U1 on B.Silkscreen
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(82.1600 mm, 102.2050 mm): Segment of U1 on B.Silkscreen
+[solder_mask_bridge]: Rear solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(75.6000 mm, 94.5000 mm): Track [Net-(U1-GPIO3_A1_D1)] on B.Cu, length 1.1472 mm
+    @(75.6000 mm, 95.1000 mm): PTH pad 1 [GND] of SW2
+[solder_mask_bridge]: Rear solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(70.8000 mm, 94.5000 mm): Track [Net-(U1-GPIO3_A1_D1)] on B.Cu, length 4.8000 mm
+    @(70.8000 mm, 95.1000 mm): PTH pad 1 [GND] of SW2
+[solder_mask_bridge]: Rear solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(70.8000 mm, 94.5000 mm): Track [Net-(U1-GPIO3_A1_D1)] on B.Cu, length 4.8000 mm
+    @(75.6000 mm, 95.1000 mm): PTH pad 1 [GND] of SW2
+
+** Found 2 unconnected pads **
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(70.8000 mm, 94.5000 mm): Track [Net-(U1-GPIO3_A1_D1)] on B.Cu, length 4.8000 mm
+    @(75.6000 mm, 98.1000 mm): PTH pad 2 [Net-(U1-GPIO3_A1_D1)] of SW2
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(70.8000 mm, 94.5000 mm): Track [Net-(U1-GPIO3_A1_D1)] on B.Cu, length 4.8000 mm
+    @(70.8000 mm, 98.1000 mm): PTH pad 2 [Net-(U1-GPIO3_A1_D1)] of SW2
+
+** Found 0 Footprint errors **
+
+** End of Report **

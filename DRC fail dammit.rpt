@@ -1,0 +1,111 @@
+** Drc report for tamagotchi.kicad_pcb **
+** Created on 2026-05-23T13:28:57+0100 **
+
+** Found 30 DRC violations **
+[annular_width]: Annular width (board setup constraints min annular width 0.1000 mm; actual -0.0039 mm)
+    Rule: board setup constraints; error
+    @(60.7400 mm, 53.7600 mm): PTH pad [<no net>] of U2
+[annular_width]: Annular width (board setup constraints min annular width 0.1000 mm; actual -0.0039 mm)
+    Rule: board setup constraints; error
+    @(60.7400 mm, 77.5600 mm): PTH pad [<no net>] of U2
+[annular_width]: Annular width (board setup constraints min annular width 0.1000 mm; actual -0.0039 mm)
+    Rule: board setup constraints; error
+    @(84.0400 mm, 53.7600 mm): PTH pad [<no net>] of U2
+[annular_width]: Annular width (board setup constraints min annular width 0.1000 mm; actual -0.0039 mm)
+    Rule: board setup constraints; error
+    @(84.0400 mm, 77.5600 mm): PTH pad [<no net>] of U2
+[track_dangling]: Track has unconnected end
+    Local override; warning
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0043 mm)
+    Rule: netclass 'Default'; error
+    @(82.6210 mm, 89.6790 mm): Track [GND] on F.Cu, length 2.5638 mm
+    @(83.0000 mm, 90.5000 mm): PTH pad 2 [Net-(U1-GPIO4_A2_D2)] of SW3
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0043 mm)
+    Rule: netclass 'Default'; error
+    @(84.2000 mm, 88.1000 mm): Track [GND] on F.Cu, length 2.2330 mm
+    @(83.0000 mm, 90.5000 mm): PTH pad 2 [Net-(U1-GPIO4_A2_D2)] of SW3
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1637 mm)
+    Rule: netclass 'Default'; error
+    @(70.8000 mm, 91.5000 mm): PTH pad 1 [GND] of SW2
+    @(72.0000 mm, 90.1400 mm): Pad 20 [unconnected-(U1-GND-Pad20)] of U1 on B.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0743 mm)
+    Rule: netclass 'Default'; error
+    @(75.6000 mm, 91.5000 mm): PTH pad 1 [GND] of SW2
+    @(74.5400 mm, 90.1400 mm): Pad 19 [unconnected-(U1-CHIP_EN-Pad19)] of U1 on B.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0650 mm)
+    Rule: netclass 'Default'; error
+    @(75.6000 mm, 91.5000 mm): PTH pad 1 [GND] of SW2
+    @(77.7150 mm, 91.4050 mm): Pad 22 [unconnected-(U1-MTCK-Pad22)] of U1 on B.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1211 mm)
+    Rule: netclass 'Default'; error
+    @(63.4000 mm, 87.7000 mm): PTH pad 1 [GND] of SW1
+    @(64.8150 mm, 86.0760 mm): Pad 14 [+5V] of U1 on B.Cu
+[shorting_items]: Items shorting two nets (nets Net-(U1-GPIO2_A0_D0) and +3V3)
+    Local override; error
+    @(63.4000 mm, 90.7000 mm): PTH pad 2 [Net-(U1-GPIO2_A0_D0)] of SW1
+    @(64.8150 mm, 91.1560 mm): Pad 12 [+3V3] of U1 on B.Cu
+[shorting_items]: Items shorting two nets (nets GND and Net-(U1-GPIO2_A0_D0))
+    Local override; error
+    @(83.0000 mm, 87.5000 mm): PTH pad 1 [GND] of SW3
+    @(81.7250 mm, 86.0760 mm): Pad 1 [Net-(U1-GPIO2_A0_D0)] of U1 on B.Cu
+[shorting_items]: Items shorting two nets (nets GND and Net-(U1-GPIO3_A1_D1))
+    Local override; error
+    @(83.0000 mm, 87.5000 mm): PTH pad 1 [GND] of SW3
+    @(81.7250 mm, 88.6160 mm): Pad 2 [Net-(U1-GPIO3_A1_D1)] of U1 on B.Cu
+[malformed_courtyard]: Footprint has malformed courtyard (self-intersecting)
+    Local override; error
+    @(72.2000 mm, 64.4000 mm): Footprint BUZZER1
+[padstack]: Padstack is questionable (PTH pad hole leaves no copper)
+    Local override; warning
+    @(60.7400 mm, 53.7600 mm): PTH pad [<no net>] of U2
+[padstack]: Padstack is questionable (PTH pad hole leaves no copper)
+    Local override; warning
+    @(60.7400 mm, 77.5600 mm): PTH pad [<no net>] of U2
+[padstack]: Padstack is questionable (PTH pad hole leaves no copper)
+    Local override; warning
+    @(84.0400 mm, 53.7600 mm): PTH pad [<no net>] of U2
+[padstack]: Padstack is questionable (PTH pad hole leaves no copper)
+    Local override; warning
+    @(84.0400 mm, 77.5600 mm): PTH pad [<no net>] of U2
+[lib_footprint_mismatch]: Footprint 'XIAO-ESP32-C3-DIP-SMD' does not match copy in library 'XIAO'.
+    Local override; warning
+    @(73.2700 mm, 93.6960 mm): Footprint U1
+[invalid_outline]: Board has malformed outline (segment has null or very small length: 1 nm)
+    Local override; error
+    @(30.0000 mm, 65.0000 mm): Segment on Edge.Cuts
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6350 mm)
+    Rule: board setup constraints silk text height; warning
+    @(83.5450 mm, 93.9710 mm): Reference field of U1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(70.6000 mm, 90.7500 mm): Circle of SW2 on F.Silkscreen
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(58.4000 mm, 86.9500 mm): Circle of SW1 on F.Silkscreen
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(82.8000 mm, 86.7500 mm): Circle of SW3 on F.Silkscreen
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(64.3800 mm, 102.2050 mm): Segment of U1 on B.Silkscreen
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(82.1600 mm, 102.2050 mm): Segment of U1 on B.Silkscreen
+[solder_mask_bridge]: Rear solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(63.4000 mm, 90.7000 mm): PTH pad 2 [Net-(U1-GPIO2_A0_D0)] of SW1
+    @(64.8150 mm, 91.1560 mm): Pad 12 [+3V3] of U1 on B.Cu
+[solder_mask_bridge]: Rear solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(83.0000 mm, 87.5000 mm): PTH pad 1 [GND] of SW3
+    @(81.7250 mm, 86.0760 mm): Pad 1 [Net-(U1-GPIO2_A0_D0)] of U1 on B.Cu
+[solder_mask_bridge]: Rear solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(83.0000 mm, 87.5000 mm): PTH pad 1 [GND] of SW3
+    @(81.7250 mm, 88.6160 mm): Pad 2 [Net-(U1-GPIO3_A1_D1)] of U1 on B.Cu
+
+** Found 0 unconnected pads **
+
+** Found 0 Footprint errors **
+
+** End of Report **

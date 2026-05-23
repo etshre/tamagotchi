@@ -37,9 +37,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 0.889,
-          "height": 1.7,
-          "width": 1.7
+          "drill": 0.8,
+          "height": 1.27,
+          "width": 2.54
         },
         "silk_line_width": 0.1,
         "silk_text_italic": false,
@@ -54,6 +54,7 @@
       "diff_pair_dimensions": [],
       "drc_exclusions": [],
       "meta": {
+        "filename": "board_design_settings.json",
         "version": 2
       },
       "rule_severities": {
@@ -117,9 +118,9 @@
       },
       "rules": {
         "max_error": 0.005,
-        "min_clearance": 0.0,
+        "min_clearance": 0.1016,
         "min_connection": 0.0,
-        "min_copper_edge_clearance": 0.5,
+        "min_copper_edge_clearance": 0.0127,
         "min_groove_width": 0.0,
         "min_hole_clearance": 0.25,
         "min_hole_to_hole": 0.25,
@@ -129,10 +130,10 @@
         "min_silk_clearance": 0.0,
         "min_text_height": 0.8,
         "min_text_thickness": 0.08,
-        "min_through_hole_diameter": 0.3,
+        "min_through_hole_diameter": 0.2032,
         "min_track_width": 0.0,
-        "min_via_annular_width": 0.1,
-        "min_via_diameter": 0.5,
+        "min_via_annular_width": 0.0762,
+        "min_via_diameter": 0.4064,
         "solder_mask_to_copper_clearance": 0.0,
         "use_height_for_length_calcs": true
       },
@@ -440,6 +441,7 @@
       "single_global_label": "ignore",
       "unannotated": "error",
       "unconnected_wire_endpoint": "warning",
+      "undefined_netclass": "error",
       "unit_value_mismatch": "error",
       "unresolved_variable": "error",
       "wire_dangling": "error"
@@ -450,14 +452,14 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "tamagotchi.kicad_pro",
+    "filename": "XIAO ESP32C3_v1.3.kicad_pro",
     "version": 3
   },
   "net_settings": {
     "classes": [
       {
         "bus_width": 12,
-        "clearance": 0.2,
+        "clearance": 0.1016,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.2,
@@ -466,7 +468,7 @@
         "microvia_drill": 0.1,
         "name": "Default",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 2147483647,
+        "priority": -1,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.2,
         "via_diameter": 0.6,
@@ -566,7 +568,7 @@
       "include_excluded_from_bom": true,
       "name": "Default Editing",
       "sort_asc": true,
-      "sort_field": "Reference"
+      "sort_field": "位号"
     },
     "connection_grid_size": 50.0,
     "drawing": {
@@ -597,7 +599,7 @@
     },
     "net_format_name": "",
     "page_layout_descr_file": "",
-    "plot_directory": "",
+    "plot_directory": "../../../../../",
     "space_save_all_events": true,
     "spice_current_sheet_as_root": false,
     "spice_external_command": "spice \"%I\"",
@@ -610,8 +612,16 @@
   },
   "sheets": [
     [
-      "8db12993-5c27-4733-8035-ccb63cbb6821",
+      "4caa6173-29c6-42a1-b9e6-89c5421a43c2",
       "Root"
+    ],
+    [
+      "98a2001e-e568-4106-a037-664a529bab82",
+      "01 Descriptions"
+    ],
+    [
+      "f1804a99-2997-4c45-8e6a-62e2066904fd",
+      "02 XIAO ESP32-C3"
     ]
   ],
   "text_variables": {}
